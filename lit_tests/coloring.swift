@@ -1,6 +1,4 @@
-// RUN: %lit-test-helper -classify-syntax -source-file %s | %FileCheck %s
-
-enum List<T> {
+ List<T> {
   case Nil
   // rdar://21927124
   // CHECK: <attr-builtin>indirect</attr-builtin> <kw>case</kw> <id>Cons</id>(<type>T</type>, <type>List</type>)
